@@ -16,8 +16,8 @@ let s:red = "cc6666"
 let s:orange = "de935f"
 let s:yellow = "f0c674"
 let s:green = "b5bd68"
-let s:aqua = "26bf70"
-let s:blue = "7fc6f0"
+let s:aqua = "26af60"
+let s:blue = "6ad6e5"
 let s:lightblue = "70b0d0"
 let s:purple = "b14cc2"
 let s:window = "252525"
@@ -258,9 +258,11 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("NonText", s:non_text, "", "")
 	call <SID>X("SpecialKey", s:selection, "", "")
 	call <SID>X("Search", s:background, s:lightblue, "")
-	call <SID>X("TabLine", s:foreground, s:background, "reverse")
+	call <SID>X("TabLine", s:tab_fg, s:tab_bg, "none")
+	call <SID>X("TabLineFill", s:tab_bg, s:foreground, "reverse")
+	call <SID>X("TabLineSel", s:comment, s:background, "reverse")
 	call <SID>X("StatusLine", s:statusline_bg, s:statusline_fg, "reverse")
-	call <SID>X("StatusLineNC", s:background, s:comment, "reverse")
+	call <SID>X("StatusLineNC", s:statusline_bg, s:comment, "reverse")
 	call <SID>X("VertSplit", s:window, s:window, "none")
 	call <SID>X("Visual", "", s:selection, "")
 	call <SID>X("Directory", s:lightblue, "", "")
