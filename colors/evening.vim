@@ -1,4 +1,4 @@
-"evening_vim -dark colorscheme for vim-editor
+"evening - dark colorscheme for vim-editor
 "Author - Haron Prime
 "© 2015 WTFPL, Do What the Fuck You Want to Public License. - http://www.wtfpl.net/
 
@@ -18,7 +18,7 @@ let s:yellow = "f0c674"
 let s:green = "b5bd68"
 let s:aqua = "8abeb7"
 let s:blue = "81a2be"
-let s:lightblue = "80c0e0"
+let s:lightblue = "70b0d0"
 let s:purple = "b294bb"
 let s:window = "252525"
 let s:tab_bg = "353535"
@@ -42,7 +42,7 @@ set background=dark
 hi clear
 syntax reset
 
-let g:colors_name = "evening_vim"
+let g:colors_name = "evening"
 
 if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	" Returns an approximate grey index for the given grey level
