@@ -16,17 +16,17 @@ let s:red = "cc6666"
 let s:orange = "de935f"
 let s:yellow = "f0c674"
 let s:green = "b5bd68"
-let s:aqua = "8abeb7"
-let s:blue = "81a2be"
+let s:aqua = "26bf70"
+let s:blue = "7fc6f0"
 let s:lightblue = "70b0d0"
-let s:purple = "b294bb"
+let s:purple = "b14cc2"
 let s:window = "252525"
 let s:tab_bg = "353535"
 let s:tab_fg = "bbbbbb"
 let s:linenr_bg = "252525"
-let s:linenr_fg = "404040"
-let s:statusline_bg = "252525"
-let s:statusline_fg = "80c0e0"
+let s:linenr_fg = "656565"
+let s:statusline_bg = "303030"
+let s:statusline_fg = "70b0d0"
 let s:cursor_bg = "555555"
 
 
@@ -252,7 +252,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 		endif
 	endfun
 
-	" Vim Highlighting
+	"hlighting
 	call <SID>X("Normal", s:foreground, s:background, "")
 	call <SID>X("LineNr", s:linenr_fg, s:linenr_bg, "")
 	call <SID>X("NonText", s:non_text, "", "")
@@ -260,7 +260,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("Search", s:background, s:lightblue, "")
 	call <SID>X("TabLine", s:foreground, s:background, "reverse")
 	call <SID>X("StatusLine", s:statusline_bg, s:statusline_fg, "reverse")
-	call <SID>X("StatusLineNC", s:linenr_fg, s:linenr_bg, "reverse")
+	call <SID>X("StatusLineNC", s:background, s:comment, "reverse")
 	call <SID>X("VertSplit", s:window, s:window, "none")
 	call <SID>X("Visual", "", s:selection, "")
 	call <SID>X("Directory", s:lightblue, "", "")
