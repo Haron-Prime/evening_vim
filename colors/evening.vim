@@ -1,4 +1,4 @@
-"Evening - dark colorscheme for vim-editor
+"evening - dark colorscheme for vim-editor
 "Author - Haron Prime
 "© 2015 WTFPL, Do What the Fuck You Want to Public License. - http://www.wtfpl.net/
 
@@ -11,7 +11,7 @@ let s:selection       = "404040"
 let s:line            = "252525"
 let s:activeline      = "353535"
 let s:non_text        = "252525"
-let s:comment         = "969896"
+let s:comment         = "757575"
 let s:red             = "cc6666"
 let s:orange          = "de935f"
 let s:yellow          = "f0c674"
@@ -288,7 +288,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("Comment", s:comment, "", "")
 	call <SID>X("Todo", s:comment, s:background, "")
 	call <SID>X("Title", s:comment, "", "")
-	call <SID>X("Identifier", s:red, "", "none")
+	call <SID>X("Identifier", s:aqua, "", "none")
 	call <SID>X("Statement", s:foreground, "", "")
 	call <SID>X("Conditional", s:foreground, "", "")
 	call <SID>X("Repeat", s:foreground, "", "")
