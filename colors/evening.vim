@@ -1,8 +1,6 @@
 "evening - dark colorscheme for vim-editor
 "Author - Haron Prime
-"© 2015 WTFPL, Do What the Fuck You Want to Public License. - http://www.wtfpl.net/
-
-"
+"License - © 2015 WTFPL, Do What the Fuck You Want to Public License. - http://www.wtfpl.net/
 
 " Default GUI Colours
 let s:foreground      = "bbbbbb"
@@ -28,7 +26,6 @@ let s:linenr_fg       = "656565"
 let s:statusline_bg   = "303030"
 let s:statusline_fg   = "65aaca"
 let s:cursor_bg       = "555555"
-
 
 " Console 256 Colours
 if !has("gui_running")
@@ -324,10 +321,26 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	" PHP Highlighting
 	call <SID>X("phpVarSelector", s:red, "", "")
 	call <SID>X("phpKeyword", s:purple, "", "")
+	call <SID>X("phpIdentifier", s:blue, "", "")
+	call <SID>X("phpType", s:aqua, "", "")
+	call <SID>X("phpOperator", s:yellow,"","")
 	call <SID>X("phpRepeat", s:purple, "", "")
 	call <SID>X("phpConditional", s:purple, "", "")
 	call <SID>X("phpStatement", s:purple, "", "")
 	call <SID>X("phpMemberSelector", s:foreground, "", "")
+	call <SID>X("phpStringSingle", s:orange, "", "")
+	call <SID>X("phpStringDelimiter", s:foreground, "", "")
+	call <SID>X("phpDefine", s:red, "", "")
+	call <SID>X("phpStorageClass", s:blue, "", "")
+	call <SID>X("phpStructure", s:blue, "", "")
+	call <SID>X("phpParent", s:foreground, "", "")
+	call <SID>X("phpInclude", s:red, "", "")
+	call <SID>X("phpMagicConstants", s:aqua, "", "")
+	call <SID>X("phpFCKeyword", s:red, "", "")
+	call <SID>X("phpSCKeyword", s:red, "", "")
+	call <SID>X("phpConstant", s:aqua, "", "")
+	call <SID>X("phpEnvVar", s:aqua, "", "")
+	call <SID>X("phpIntVar", s:aqua, "", "")
 
 	" Ruby Highlighting
 	call <SID>X("rubySymbol", s:green, "", "")
@@ -369,6 +382,16 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("javaScriptRepeat", s:purple, "", "")
 	call <SID>X("javaScriptNumber", s:orange, "", "")
 	call <SID>X("javaScriptMember", s:orange, "", "")
+	call <SID>X("javaScriptGlobal", s:yellow, "", "")
+
+	" for https://github.com/pangloss/vim-javascript
+	call <SID>X("jsModules", s:red, "", "")
+	call <SID>X("jsModuleWords", s:red, "", "")
+	call <SID>X("jsFunction", s:red, "", "")
+	call <SID>X("jsClass", s:yellow, "", "")
+	call <SID>X("jsOperator", s:foreground, "", "")
+	call <SID>X("jsOperatorWords", s:blue, "", "")
+	call <SID>X("jsKeyword", s:blue, "", "")
 
 	" HTML Highlighting
 	call <SID>X("htmlTag", s:red, "", "")
