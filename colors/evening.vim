@@ -252,7 +252,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 		endif
 	endfun
 
-	"hlighting
+	"UI hlighting
 	call <SID>X("Normal", s:foreground, s:background, "")
 	call <SID>X("LineNr", s:linenr_fg, s:linenr_bg, "")
 	call <SID>X("NonText", s:non_text, "", "")
@@ -273,6 +273,10 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("MatchParen", "", s:selection, "")
 	call <SID>X("Folded", s:comment, s:background, "")
 	call <SID>X("FoldColumn", "", s:background, "")
+
+	hi CursorLine guibg=#202020
+	hi Cursor guifg=NONE guibg=#555555 gui=none
+
 	if version >= 700
 		call <SID>X("CursorLine", "", s:activeline, "none")
 		call <SID>X("CursorColumn", "", s:line, "none")
@@ -289,7 +293,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("Todo", s:comment, s:background, "")
 	call <SID>X("Title", s:comment, "", "")
 	call <SID>X("Identifier", s:purple, "", "none")
-	call <SID>X("Statement", s:foreground, "", "")
+	call <SID>X("Statement", s:yellow, "", "")
 	call <SID>X("Conditional", s:foreground, "", "")
 	call <SID>X("Repeat", s:foreground, "", "")
 	call <SID>X("Structure", s:purple, "", "")
@@ -303,6 +307,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("Define", s:purple, "", "none")
 	call <SID>X("Include", s:blue, "", "")
 	"call <SID>X("Ignore", "666666", "", "")
+	call <SID>X("Number", s:orange, "" , "")
 
 	" Vim Highlighting
 	call <SID>X("vimCommand", s:red, "", "none")
@@ -310,8 +315,11 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	" C Highlighting
 	call <SID>X("cType", s:yellow, "", "")
 	call <SID>X("cStorageClass", s:purple, "", "")
-	call <SID>X("cConditional", s:purple, "", "")
-	call <SID>X("cRepeat", s:purple, "", "")
+	call <SID>X("cConditional", s:blue, "", "")
+	call <SID>X("cPreCondit", s:purple, "", "")
+	call <SID>X("cRepeat", s:yellow, "", "")
+	call <SID>X("cDefine", s:red, "", "")
+	call <SID>X("cInclude", s:red, "", "")
 
 	" PHP Highlighting
 	call <SID>X("phpVarSelector", s:red, "", "")
