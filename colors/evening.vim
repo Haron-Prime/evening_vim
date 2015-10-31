@@ -458,6 +458,8 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("shDerefSimple", s:aqua, "", "")
 	call <SID>X("shFunction", s:orange, "", "bold")
 	call <SID>X("shStatement", s:foreground, "", "")
+	call <SID>X("shOperator", s:purple, "", "")
+	call <SID>X("shConditional", s:orange, "", "")
 	call <SID>X("shLoop", s:purple, "", "bold")
 	call <SID>X("shQuote", s:olive, "", "")
 	call <SID>X("shCaseEsac", s:aqua, "", "bold")
