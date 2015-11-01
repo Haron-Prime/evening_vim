@@ -21,7 +21,7 @@ let s:cursor_bg       = "555555"
 
 let s:red             = "cc6666"
 let s:lyme            = "afdf00"
-let s:peach           = "df875f"
+let s:peach           = "ddb79e"
 let s:orange          = "de935f"
 let s:wine            = "af8787"
 let s:purple          = "b14cc2"
