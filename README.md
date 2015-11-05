@@ -1,5 +1,5 @@
 # evening
-Dark colorscheme for vim-editor
+Dark colorscheme for vim/neovim
 
 #### Some screenshots (evening)
 
