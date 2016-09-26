@@ -5,7 +5,7 @@ Dark colorscheme for vim/neovim
 
 ![](/screenshots/evening.png?raw=true)
 
-# License 
+#### License -  http://www.wtfpl.net/
 
 ```
 DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
