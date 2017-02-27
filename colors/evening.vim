@@ -4,7 +4,7 @@
 
 " Default GUI Colours
 let s:foreground      = "bbbbbb"
-let s:background      = "252525"
+let s:background      = "000000"
 let s:selection       = "404040"
 let s:line            = "252525"
 let s:activeline      = "353535"
