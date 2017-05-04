@@ -1,6 +1,6 @@
 "evening - dark colorscheme for vim-editor
 "Author - Haron Prime
-"License - © 2015 WTFPL, Do What the Fuck You Want to Public License. - http://www.wtfpl.net/
+"License - © 2017 WTFPL, Do What the Fuck You Want to Public License. - http://www.wtfpl.net/
 
 " Default GUI Colours
 let s:foreground      = "bbbbbb"
