@@ -6,7 +6,7 @@ Dark colorscheme for vim/neovim
 viml
 ![](/screenshots/evening.png?raw=true)
 
-#### License - © 2017 WTFPL - http://www.wtfpl.net/
+### License - [WTFPL](http://www.wtfpl.net/ "WTFPL") 
 
 ```
 DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
